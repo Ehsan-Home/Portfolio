@@ -9,7 +9,10 @@ const Hero = () => {
     <Row gutter={8} align="middle" className={styles.heroHeight}>
       <Col span={18}>
         <Title level={2}>Hey, I&apos;m Ehsan 👋🏻</Title>
-        <Paragraph>This is the paragraph</Paragraph>
+        <Paragraph type="secondary">
+          Welcome to my page! I&apos;m a software engineer, and I usually code
+          in React and Python.
+        </Paragraph>
       </Col>
       <Col span={6}>
         <Image
