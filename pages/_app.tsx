@@ -1,10 +1,10 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { Layout } from "antd";
+import { Col, Layout, Row } from "antd";
 import Navbar from "@/components/Navbar";
 
-const { Header, Content, Footer } = Layout;
+const { Content, Footer } = Layout;
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -14,9 +14,13 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <Layout>
         <Navbar />
-        <Content>
-          <Component {...pageProps} />
-        </Content>
+        <Row justify="center">
+          <Col span={20} style={{ border: "1px solid red" }}>
+            <Content>
+              <Component {...pageProps} />
+            </Content>
+          </Col>
+        </Row>
         <Footer>Footer</Footer>
       </Layout>
     </>
