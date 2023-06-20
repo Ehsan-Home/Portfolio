@@ -1,4 +1,6 @@
-import { Header } from "antd/es/layout/layout";
+import { Layout } from "antd";
+
+const { Header } = Layout;
 
 const Navbar = () => {
   return <Header>Header</Header>;
