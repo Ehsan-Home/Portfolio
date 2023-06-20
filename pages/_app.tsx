@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Layout>
         <Navbar />
         <Row justify="center">
-          <Col span={20} style={{ border: "1px solid red" }}>
+          <Col span={20}>
             <Content>
               <Component {...pageProps} />
             </Content>
