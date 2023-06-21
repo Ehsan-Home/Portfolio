@@ -1,0 +1,50 @@
+{
+  "React": {
+    "name": "React",
+    "color": "#3880f2"
+  },
+  "Next": {
+    "name": "Next.js",
+    "color": "#475fc9"
+  },
+  "Angular": {
+    "name": "Angular",
+    "color": "#DD0031"
+  },
+  "Vue.js": {
+    "name": "Vue.js",
+    "color": "#4FC08D"
+  },
+  "SolidJs": {
+    "name": "Solid.js",
+    "color": "#5ac783"
+  },
+  "Ember.js": {
+    "name": "Ember.js",
+    "color": "#E04E39"
+  },
+  "Django": {
+    "name": "Django",
+    "color": "#092E20"
+  },
+  "Ruby on Rails": {
+    "name": "Ruby on Rails",
+    "color": "#CC0000"
+  },
+  "ASPNET": {
+    "name": "ASP.NET",
+    "color": "#0C84C6"
+  },
+  "Express.js": {
+    "name": "Express.js",
+    "color": "#000000"
+  },
+  "AntDesign": {
+    "name": "Ant Design",
+    "color": "#5fA3f2"
+  },
+  "Bootstrap": {
+    "name": "Bootstrap",
+    "color": "#85395e"
+  }
+}

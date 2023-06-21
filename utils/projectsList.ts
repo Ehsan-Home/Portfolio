@@ -1,46 +1,53 @@
 import { Project } from "@/models/ProjectModel";
+import langs from "@/utils/languages.json"
+import frameworks from "@/utils/frameworks.json"
+import techs from "@/utils/technologies.json"
+
+const {Python, JavaScript, Java, Swift, Solidity, CSharp, TypeScript, SQL} = langs
+const {React, Django, AntDesign, ASPNET, Next, Bootstrap, SolidJs} = frameworks
+const {Blockchain, Ethereum, AWS, ML} = techs
 
 export const projectsList:Project[] = [
     {
         title:"Privacy-preserving, First-price, Sealed-bid Auction based on Blockchain",
         image:"image",
-        techs:["React", "JavaScript", "Ant-design", "Python", "Django", "Solidity","Blockchain", "Ethereum"],
+        techs:[Python, JavaScript, React, Django, Blockchain, Solidity, Ethereum, AntDesign],
         link:"https://github.com/AKEB-asyemmtric-key-each-bidder"
     },
     {
         title:"CareChanger",
         image:"image",
-        techs:["React","Ant-design", "JavaScript","AWS", "Swift (iOS)", "Java (Android)", "Auth0", "Firebase", "C#", ".NET"],
+        techs:[React,JavaScript, AntDesign, AWS, Java,Swift, CSharp, ASPNET],
         link:"https://carechanger.ca/"
     },
     {
         title:"InfoSphere",
         image:"image",
-        techs:["Next","React", "TypeScript", "Bootstrap", "Vercel"],
+        techs:[TypeScript, Next, Bootstrap],
         link:"https://news-app-ehsan-home.vercel.app/"
     },
     {
         title:"URL Shortener Service",
         image:"image",
-        techs:["React", "JavaScript", "Ant-design", "Python", "Django", "SQL"],
+        techs:[Python, Django, JavaScript, React, SQL],
         link:"https://github.com/Ehsan-Home/URL_shortener"
     },
     {
         title:"GitHubVentory",
         image:"image",
-        techs:["Solid.js","TypeScript","Bootstrap"],
+        techs:[SolidJs, TypeScript, Bootstrap],
         link:"https://githubventory.vercel.app/"
     },
     {
         title:"GelDerm",
         image:"image",
-        techs:["Swift (iOS)", "Java (Android)", "Machine Learning"],
+        techs:[Swift, Java, ML],
         link:"https://4mbiotech.com/projectss/"
     },
     {
         title:"Student Collaboration Platform",
         image:"image",
-        techs:["React", "JavaScript", "Ant-design", "Python", "Django", "SQL"],
+        techs:[Python, Django, React, JavaScript, SQL],
         link:"https://github.com/Ehsan-Home"
     },
 ]

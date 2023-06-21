@@ -1,0 +1,46 @@
+{
+  "Python": {
+    "name": "Python",
+    "color": "#3572A5"
+  },
+  "JavaScript": {
+    "name": "JavaScript",
+    "color": "#a89c3d"
+  },
+  "TypeScript": {
+    "name": "TypeScript",
+    "color": "#004289"
+  },
+  "Java": {
+    "name": "Java",
+    "color": "#B07219"
+  },
+  "C++": {
+    "name": "C++",
+    "color": "#F34B7D"
+  },
+  "Ruby": {
+    "name": "Ruby",
+    "color": "#701516"
+  },
+  "Go": {
+    "name": "Go",
+    "color": "#00ADD8"
+  },
+  "Swift": {
+    "name": "Swift",
+    "color": "#FFAC45"
+  },
+  "Solidity": {
+    "name": "Solidity",
+    "color": "#ffd539"
+  },
+  "CSharp": {
+    "name": "C#",
+    "color": "#456b2e"
+  },
+  "SQL": {
+    "name": "SQL",
+    "color": "#a6b051"
+  }
+}

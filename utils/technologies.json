@@ -1,0 +1,26 @@
+{
+  "Blockchain": {
+    "name": "Blockchain",
+    "color": "#a957b0"
+  },
+  "Firebase": {
+    "name": "Firebase",
+    "color": "#ff5a03"
+  },
+  "Auth0": {
+    "name": "Auth0",
+    "color": "#1C3552"
+  },
+  "Ethereum": {
+    "name": "Ethereum",
+    "color": "#0040FF"
+  },
+  "AWS": {
+    "name": "AWS",
+    "color": "#6b322e"
+  },
+  "ML": {
+    "name": "Machine Learning",
+    "color": "#4fa6b0"
+  }
+}
