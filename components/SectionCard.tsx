@@ -1,12 +1,9 @@
 import { Card } from "antd";
 import { ReactNode } from "react";
-
-// const func: T1 = (name: T1) => {
-//   return name + "   ";
-// };
+import styles from "@/styles/sectionCard.module.css";
 
 const SectionCard = ({ children }: { children: ReactNode }) => {
-  return <Card>{children}</Card>;
+  return <Card className={styles.ma_b_100}>{children}</Card>;
 };
 
 export default SectionCard;
