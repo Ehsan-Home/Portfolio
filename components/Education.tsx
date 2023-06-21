@@ -1,9 +1,10 @@
-import { Avatar, List, Space, Tag } from "antd";
+import { Avatar, Card, List, Space, Tag } from "antd";
 import SectionTitle from "./SectionTitle";
 import Link from "next/link";
 import Image from "next/image";
 import uvicImage from "@/public/images/uvic.png";
 import iutImage from "@/public/images/iut.svg";
+import SectionCard from "./SectionCard";
 
 const data = [
   {
@@ -33,37 +34,39 @@ const Education = () => {
   return (
     <>
       <SectionTitle titleName="Education" />
-      <List
-        itemLayout="vertical"
-        dataSource={data}
-        renderItem={(item, index) => (
-          <List.Item extra={<div>{item.time}</div>}>
-            <List.Item.Meta
-              avatar={
-                <Avatar
-                  size="large"
-                  src={<Image src={item.avatar} alt="uvic-image" />}
-                />
-              }
-              title={<Link href={item.titleLink}>{item.title}</Link>}
-              description={
-                <Space direction="vertical">
-                  {item.program}
-                  <div>
-                    Project:{" "}
-                    {item.projectLink ? (
-                      <Link href={item.projectLink}>{item.project}</Link>
-                    ) : (
-                      item.project
-                    )}
-                  </div>
-                  <Tag>GPA: {item.GPA}</Tag>
-                </Space>
-              }
-            />
-          </List.Item>
-        )}
-      />
+      <SectionCard>
+        <List
+          itemLayout="vertical"
+          dataSource={data}
+          renderItem={(item, index) => (
+            <List.Item extra={<div>{item.time}</div>}>
+              <List.Item.Meta
+                avatar={
+                  <Avatar
+                    size="large"
+                    src={<Image src={item.avatar} alt="uvic-image" />}
+                  />
+                }
+                title={<Link href={item.titleLink}>{item.title}</Link>}
+                description={
+                  <Space direction="vertical">
+                    {item.program}
+                    <div>
+                      Project:{" "}
+                      {item.projectLink ? (
+                        <Link href={item.projectLink}>{item.project}</Link>
+                      ) : (
+                        item.project
+                      )}
+                    </div>
+                    <Tag>GPA: {item.GPA}</Tag>
+                  </Space>
+                }
+              />
+            </List.Item>
+          )}
+        />
+      </SectionCard>
     </>
   );
 };
