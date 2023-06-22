@@ -9,14 +9,13 @@ const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <Card
       // style={{ height: "100%", width: "100%" }}
-      type="inner"
       actions={[
         <Link href={project.link} key={project.link}>
           Link
         </Link>,
       ]}
       title={
-        <Title level={5} className={styles.wrap}>
+        <Title level={5} className={`${styles.wrap} ${styles.mt_10}`}>
           {project.title}
         </Title>
       }
