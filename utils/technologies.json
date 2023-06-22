@@ -22,5 +22,29 @@
   "ML": {
     "name": "Machine Learning",
     "color": "#4fa6b0"
+  },
+  "Git": {
+    "name": "Git",
+    "color": "#105723"
+  },
+  "GitHub": {
+    "name": "GitHub",
+    "color": "#102f57"
+  },
+  "GitLab": {
+    "name": "GitLab",
+    "color": "#e66f3c"
+  },
+  "Docker": {
+    "name": "Docker",
+    "color": "#3c69e6"
+  },
+  "NoSQL": {
+    "name": "NoSQL",
+    "color": "#e63ce3"
+  },
+  "RestAPI": {
+    "name": "RestAPI",
+    "color": "#e874e6"
   }
 }
