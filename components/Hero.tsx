@@ -7,7 +7,12 @@ const { Title, Paragraph } = Typography;
 
 const Hero = () => {
   return (
-    <Row gutter={8} align="middle" className={styles.heroHeight}>
+    <Row
+      gutter={8}
+      justify="center"
+      align="middle"
+      className={styles.heroHeight}
+    >
       <Col lg={18} md={18} sm={24}>
         <Title level={2}>Hey, I&apos;m Ehsan 👋🏻</Title>
         <Paragraph type="secondary">
@@ -16,7 +21,13 @@ const Hero = () => {
         </Paragraph>
       </Col>
       <Col lg={6} md={6} sm={24}>
-        <Image className={styles.image} src={profilePic} alt="profile-image" />
+        <Image
+          className={styles.image}
+          src="/images/profile.jpeg"
+          width={200}
+          height={200}
+          alt="profile-image"
+        />
       </Col>
     </Row>
   );
