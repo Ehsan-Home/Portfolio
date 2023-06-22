@@ -15,7 +15,7 @@ const Hero = () => {
     >
       <Col lg={18} md={18} sm={24}>
         <Title level={2}>Hey, I&apos;m Ehsan 👋🏻</Title>
-        <Paragraph type="secondary">
+        <Paragraph>
           Welcome to my page! I&apos;m a software engineer, and I usually code
           in React and Python.
         </Paragraph>
