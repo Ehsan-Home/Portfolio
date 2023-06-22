@@ -3,6 +3,8 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Col, Layout, Row } from "antd";
 import Navbar from "@/components/Navbar";
+import Contact from "@/components/Contact";
+import styles from "@/styles/footer.module.css";
 
 const { Content, Footer } = Layout;
 
@@ -21,7 +23,8 @@ export default function App({ Component, pageProps }: AppProps) {
             </Content>
           </Col>
         </Row>
-        <Footer>Footer</Footer>
+
+        <Contact />
       </Layout>
     </>
   );
