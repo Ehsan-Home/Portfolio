@@ -15,7 +15,7 @@ const Contact = () => {
       >
         <Col span={24}>Ehsan Ghasaei @{currentYear}</Col>
         <Col span={24}>ehsan.ghasaei@gmail.com</Col>
-        <Col span={1}>
+        <Col md={1} sm={4}>
           <Link
             href="https://github.com/Ehsan-Home"
             className={styles.text_white}
@@ -23,7 +23,7 @@ const Contact = () => {
             <GithubFilled className={styles.icon_font} />
           </Link>
         </Col>
-        <Col span={1}>
+        <Col md={1} sm={4}>
           <Link
             href="https://www.linkedin.com/in/ehsanghasaei/"
             className={styles.text_white}
@@ -31,7 +31,7 @@ const Contact = () => {
             <LinkedinFilled className={styles.icon_font} />
           </Link>
         </Col>
-        <Col span={1}>
+        <Col md={1} sm={4}>
           <Link
             href="https://www.youtube.com/channel/UCDZDIwdAJFY3G2rbz676kxw"
             className={styles.text_white}
