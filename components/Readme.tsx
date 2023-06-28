@@ -20,12 +20,7 @@ const readmeComponents: Components = {
       <Divider style={{ marginTop: "5px" }} />
     </>
   ),
-  h3: ({ node, ...props }) => (
-    <>
-      <Title level={4}>{props.children}</Title>
-      <Divider style={{ marginTop: "5px" }} />
-    </>
-  ),
+  h3: ({ node, ...props }) => <Title level={4}>{props.children}</Title>,
   strong: ({ node, ...props }) => <Text strong>{props.children}</Text>,
   code: ({ node, ...props }) =>
     props.inline ? (
