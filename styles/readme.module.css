@@ -1,0 +1,12 @@
+.mt-50 {
+    margin-top: 50px;
+}
+
+
+.code {
+    background: #f0f0f0;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+    font-size: 12px;
+}
