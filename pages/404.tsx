@@ -12,7 +12,7 @@ const PageNotFound = () => {
             description={<Title level={5}>The page does not exist!</Title>}
           >
             <Button type="link" size="large">
-              <Link href="/">Back to home</Link>
+              <Link href="/">Back to Home</Link>
             </Button>
           </Empty>
         </Card>
