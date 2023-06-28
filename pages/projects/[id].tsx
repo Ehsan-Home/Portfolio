@@ -3,7 +3,6 @@ import { ReadmeModel } from "@/models/ReadmeModel";
 import { client } from "@/utils/axios/axios";
 import { projectIds } from "@/utils/projectsContent/projects";
 import { GetStaticPaths, GetStaticProps } from "next";
-import { redirect } from "next/navigation";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = Object.values(projectIds).map((projectId) => {
@@ -38,7 +37,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 const Projects = ({ content }: ReadmeModel) => {
-  return <Readme>{content}</Readme>;
+  return <Readme isFromGitHub={true}>{content}</Readme>;
 };
 
 export default Projects;

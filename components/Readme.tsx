@@ -1,4 +1,4 @@
-import { Card, Divider, Table, Tag, Typography } from "antd";
+import { Alert, Card, Divider, Table, Tag, Typography } from "antd";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import styles from "@/styles/readme.module.css";
 import Link from "next/link";
@@ -30,9 +30,21 @@ const readmeComponents: Components = {
     ),
 };
 
-const Readme = ({ children }: { children: string }) => {
+const Readme = ({
+  children,
+  isFromGitHub,
+}: {
+  children: string;
+  isFromGitHub?: boolean;
+}) => {
   return (
     <Card className={styles["mt-50"]}>
+      <Alert
+        message={`This file is fetched ${
+          isFromGitHub ? "from GitHub" : "locally"
+        }`}
+        showIcon
+      />
       <ReactMarkdown remarkPlugins={[remarkGfm]} components={readmeComponents}>
         {children}
       </ReactMarkdown>
