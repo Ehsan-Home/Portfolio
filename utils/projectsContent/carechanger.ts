@@ -1,15 +1,15 @@
 export const CareChangerContent = `
 # CareChanger
-### Problem
+## Problem
 - Void events in incontinent patients can cause mental and physical issues if not being attended in time such as itching, burning, and infection.
 - Attending the void events daily requires the nurses or care givers to constantly check the patient or based on a fixed schedule.
 - By 2026, there will be **1,126,000** seniors suffering from urine incontinence.
 
-### Actions
+## Actions
 - Created a device embedded into patient’s seat cushion to detect urinary incontinence.
 - Built a web application, server, and mobile applications to alarm the caregivers in time.
 
-### My Tasks
+## My Tasks
 - Designed and developed the front-end of the web application.
     - Contained **user authentication, permission levels, invitation handling, responsive design**, etc.
     - Optimized the performance of the frontend by image compression, removing unused JavaScript, and deferring offscreen images, resulting in the top **10%** of global website ranking.
@@ -27,10 +27,10 @@ export const CareChangerContent = `
 - Provided **15** frontend, mobile, and system documents in PDF using **Notion** for the teams to seamlessly learn the basics of the platform.
 - Communicated with Stakeholder to gather requirements.
 
-### Result
+## Result
 - 60% improvement in care quality : Increasing successful detection in toilet needs from 2 times a day to 6 times a day.
 
-### Tech Stack
+## Tech Stack
 Front-end:
 - React.js
 - JavaScript
@@ -66,7 +66,7 @@ Other tools:
 Version control:
 - Git
 - GitHub
-### Links
+## Links
 - [Linkedin](https://www.linkedin.com/posts/ehsanghasaei_victoria-fathers-device-for-wheelchair-users-activity-6988913854978150401-_2mo/?utm_source=share&utm_medium=member_desktop)
 - [YouTube](https://youtu.be/28WE59gSHUg)
 - [Local-news](https://www.cheknews.ca/victoria-fathers-device-for-wheelchair-users-gets-closer-to-hitting-the-market-1051086/)
