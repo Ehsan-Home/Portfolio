@@ -1,7 +1,5 @@
-import { Button, Card, Col, Empty, Result, Row, Typography } from "antd";
+import { Card, Col, Result, Row } from "antd";
 import Link from "next/link";
-
-const { Title } = Typography;
 
 const ErrorPage = () => {
   return (
