@@ -4,7 +4,7 @@ import styles from "@/styles/readme.module.css";
 import Link from "next/link";
 import remarkGfm from "remark-gfm";
 
-const { Title, Text } = Typography;
+const { Title, Text, Paragraph } = Typography;
 
 const Readme = ({ children }: { children: string }) => {
   return (
@@ -31,7 +31,12 @@ const Readme = ({ children }: { children: string }) => {
             </>
           ),
           strong: ({ node, ...props }) => <Text strong>{props.children}</Text>,
-          code: ({ node, ...props }) => <Text code>{props.children}</Text>,
+          code: ({ node, ...props }) =>
+            props.inline ? (
+              <Text code>{props.children}</Text>
+            ) : (
+              <div className={styles.code}>{props.children}</div>
+            ),
         }}
       >
         {children}
