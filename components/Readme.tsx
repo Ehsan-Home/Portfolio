@@ -2,6 +2,7 @@ import { Card, Divider, Tag, Typography } from "antd";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import styles from "@/styles/readme.module.css";
 import Link from "next/link";
+import remarkGfm from "remark-gfm";
 
 const { Title, Text } = Typography;
 
@@ -9,6 +10,7 @@ const Readme = ({ children }: { children: string }) => {
   return (
     <Card className={styles["mt-50"]}>
       <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
         components={{
           h1: ({ node, ...props }) => (
             <>
