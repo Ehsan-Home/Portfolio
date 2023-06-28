@@ -5,7 +5,7 @@ import { projectIds } from "@/utils/projectsContent/projects";
 import { GetStaticPaths, GetStaticProps } from "next";
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = projectIds.map((projectId) => {
+  const paths = Object.values(projectIds).map((projectId) => {
     return {
       params: {
         id: projectId,

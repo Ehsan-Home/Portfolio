@@ -13,6 +13,9 @@ const ProjectCard = ({ project }: { project: Project }) => {
         <Link href={project.link} key={project.link}>
           Link
         </Link>,
+        <Link href={`/projects/${project.to}`} key={project.to}>
+          More
+        </Link>,
       ]}
       title={
         <Title level={5} className={`${styles.wrap} ${styles.mt_10}`}>

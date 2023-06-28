@@ -4,6 +4,7 @@ import Head from "next/head";
 import { Col, ConfigProvider, Layout, Row } from "antd";
 import Navbar from "@/components/Navbar";
 import Contact from "@/components/Contact";
+import NextNProgress from "nextjs-progressbar";
 
 const { Content } = Layout;
 
@@ -22,6 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Row justify="center">
             <Col span={20}>
               <Content>
+                <NextNProgress />
                 <Component {...pageProps} />
               </Content>
             </Col>
