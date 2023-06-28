@@ -1,4 +1,4 @@
-import { Card, Divider, Tag, Typography } from "antd";
+import { Card, Divider, Table, Tag, Typography } from "antd";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import styles from "@/styles/readme.module.css";
 import Link from "next/link";

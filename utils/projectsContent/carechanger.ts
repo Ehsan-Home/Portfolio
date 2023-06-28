@@ -31,7 +31,7 @@ export const CareChangerContent = `
 - 60% improvement in care quality : Increasing successful detection in toilet needs from 2 times a day to 6 times a day.
 
 ## Tech Stack
-Front-end:
+### Front-end:
 - React.js
 - JavaScript
 - Ant design
@@ -39,7 +39,7 @@ Front-end:
 - NPM
 - Create react app
 
-Back-end:
+### Back-end:
 - .NET
 - C#
 - AWS
@@ -51,21 +51,23 @@ Back-end:
   - SNS
   - GitHub-actions
 
-iOS:
+### iOS:
 - Swift
 - TestFlight
 
-Android:
+### Android:
 - Java
 
-Other tools:
+### Other tools:
 - Postman
 - Firebase
 - Auth0
 
-Version control:
+### Version control:
 - Git
 - GitHub
+
+
 ## Links
 - [Linkedin](https://www.linkedin.com/posts/ehsanghasaei_victoria-fathers-device-for-wheelchair-users-activity-6988913854978150401-_2mo/?utm_source=share&utm_medium=member_desktop)
 - [YouTube](https://youtu.be/28WE59gSHUg)
