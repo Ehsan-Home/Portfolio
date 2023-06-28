@@ -21,7 +21,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const projectId = params?.id?.toString();
-  const res = await client.get(`repos/Ehsan-Home/${projectId}/readme`);
+  const res = await client.get(`repos/Ehsan-Home/${projectId}/readme2`);
   const readmeInBase64: ReadmeModel = res.data;
   const readme = atob(readmeInBase64.content);
 
