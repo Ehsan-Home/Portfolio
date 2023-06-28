@@ -1,13 +1,8 @@
+import Readme from "@/components/Readme";
 import { idermContent } from "@/utils/projectsContent/iderm";
-import { Card } from "antd";
-import ReactMarkdown from "react-markdown";
 
 const Iderm = () => {
-  return (
-    <Card>
-      <ReactMarkdown>{idermContent}</ReactMarkdown>
-    </Card>
-  );
+  return <Readme>{idermContent}</Readme>;
 };
 
 export default Iderm;

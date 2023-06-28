@@ -1,13 +1,8 @@
+import Readme from "@/components/Readme";
 import { CareChangerContent } from "@/utils/projectsContent/carechanger";
-import { Card } from "antd";
-import ReactMarkdown from "react-markdown";
 
 const CareChanger = () => {
-  return (
-    <Card>
-      <ReactMarkdown>{CareChangerContent}</ReactMarkdown>
-    </Card>
-  );
+  return <Readme>{CareChangerContent}</Readme>;
 };
 
 export default CareChanger;

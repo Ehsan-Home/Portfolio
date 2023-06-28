@@ -1,9 +1,8 @@
+import Readme from "@/components/Readme";
 import { ReadmeModel } from "@/models/ReadmeModel";
 import { client } from "@/utils/axios/axios";
 import { projectIds } from "@/utils/projectsContent/projects";
-import { Card } from "antd";
 import { GetStaticPaths, GetStaticProps } from "next";
-import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = projectIds.map((projectId) => {
@@ -32,11 +31,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 const Projects = ({ content }: ReadmeModel) => {
-  return (
-    <Card>
-      <ReactMarkdown>{content}</ReactMarkdown>
-    </Card>
-  );
+  return <Readme>{content}</Readme>;
 };
 
 export default Projects;
