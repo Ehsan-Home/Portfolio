@@ -1,6 +1,7 @@
 import { ReadmeModel } from "@/models/ReadmeModel";
 import { client } from "@/utils/axios/axios";
 import { projectIds } from "@/utils/projectsContent/projects";
+import { Card } from "antd";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
@@ -31,7 +32,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 const Projects = ({ content }: ReadmeModel) => {
-  return <ReactMarkdown>{content}</ReactMarkdown>;
+  return (
+    <Card>
+      <ReactMarkdown>{content}</ReactMarkdown>
+    </Card>
+  );
 };
 
 export default Projects;
