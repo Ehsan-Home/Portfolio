@@ -27,6 +27,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   return {
     props: { content: readme },
+    revalidate: 10 * 60,
   };
 };
 
